@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Portela - Contato</title>
+    <script src="https://kit.fontawesome.com/01d98da65d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header"> 
+        <nav class="header__menu">
+        <a class="header__menu__link" href="index.html">Home</a>
+        <a class="header__menu__link" href="about.html">Sobre Mim</a>
+        <a class="header__menu__link" href="contact.html">Contato</a>
+    </nav>
+    </header>
+    <main class="presentation">
+        <section class="presentation__content">
+        <h1 class="presentation__content__title">Contate-me!
+            <p class="presentation__content__text"> Caso queira entrar em contato comigo, preencha as informações ao lado e clique em enviar ou me mande uma dm em algumas das redes linkadas. :)</p>
+            <a href="https://www.instagram.com/portelagu/"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/portelagu/"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://github.com/portelagu"><i class="fa-brands fa-github"></i></a>
+        </section>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title"><h1>Fale comigo</h1></div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input type="tel" id="number" name="number" placeholder="(XX) XXXX-XXXX" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
+                    </div>
+                </div>
+                
+                <div class="input-box-message">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Digite a sua mensagem aqui..." required></textarea>
+                </div>
+                
+                <div class="send-button">
+                    <a href="#">Enviar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer> 
+        <p class="footer_about">Desenvolvido por Gustavo Portela.</p>
+    </footer>
+</body>
+</html>
