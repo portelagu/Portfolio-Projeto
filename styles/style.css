@@ -4,10 +4,11 @@ body {
     box-sizing: border-box;
     background-image: linear-gradient(to right, #000, #02010a);
     color: #F6F6F6;
+    font-family: 'MontSerrat', sans-serif;
 }
 
 strong {
-    color: #3A015C
+    color: #3A015C;
 }
 
 .presentation {
@@ -15,23 +16,24 @@ strong {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 82px;
 }
 
 .presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .presentation__content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 45px;
     font-family: 'Krona One', sans-serif;
 }
 
 .presentation__content__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 35px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -39,7 +41,7 @@ strong {
 .presentation__button_subtitle {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .presentation__button {
@@ -51,24 +53,29 @@ strong {
 }
 
 .presentation__button__style {
-    border: 3px solid #3A015C;
-    width: 378px;
+    border: 2px solid #3A015C;
+    width: 50%;
     text-align: center;
     color: #FFFFFF;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    transition: transform .4s;
 }
 
 .presentation__button__style:hover {
     background-color: #0f001b;
-}
+    transform: scale(1.1);}
 
 .presentation .presentation__content .fa-brands {
     color: #3A015C;
+}
+
+.presentation__image {
+    width: 40%;
 }
 
 
@@ -78,7 +85,7 @@ span {
 
 .footer {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 24px;
     background-color: #3A015C;
@@ -99,21 +106,57 @@ gap: 80px;
     color: #3A015C;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
+    transition: transform .3s;
+}
+
+.header__menu__link:hover {
+    transform: scale(0.95);
 }
 
 /*pagina about me*/
 
+.gradient_title {
+back: linear-gradient(to right, #2F184B, #C8B1E4);
+}
+
+.presentation__content__title a {
+    color: #FFF;
+}
+
+.presentation__content__title a:hover {
+    color: #3A015C;
+}
+
+.about__presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
 .about__presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .about__presentation__content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
+}
+
+.presentation .presentation__content .presentation__content__title i {
+    color: white;
+    margin: 10px 7px 0 0;
+    font-size: 2.5rem;
+    }
+
+
+.presentation .presentation__content .presentation__content__title i:hover {
+    color: #3A015C;
 }
 
 h1.about__presentation__content__title {
@@ -121,7 +164,7 @@ h1.about__presentation__content__title {
 }
 
 .about__presentation__content__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 35px;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -129,7 +172,7 @@ h1.about__presentation__content__title {
 
 .footer_about {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 24px;
     background-color: #3A015C;
@@ -137,7 +180,23 @@ h1.about__presentation__content__title {
     margin: 0;
 }
 
-/* contato */
+/* pagina contato */
+
+.medias {
+margin-top: 30px;
+}
+
+.medias_title {
+    font-size: 25px;
+}
+
+.contact__presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
 
 .form {
     width: 50%;
@@ -155,7 +214,7 @@ h1.about__presentation__content__title {
     display: flex;
     justify-content: space-between;
     font-family: 'Krona One', sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .form-header h1::after {
@@ -164,7 +223,7 @@ h1.about__presentation__content__title {
     width: 10rem;
     margin: 5px 0;
     height: 0.3rem;
-    background-color: #3A015C;
+    background-color: 3A015C;
     margin: 10 auto;
     position: absolute;
     border-radius: 10px;
@@ -225,6 +284,7 @@ h1.about__presentation__content__title {
     box-shadow: 1px 1px 1px #000;
     width: 85%;
     height: 25vh;
+    font-family: sans-serif;
 }
 
 .input-box-message textarea:hover {
@@ -238,6 +298,7 @@ h1.about__presentation__content__title {
 .input-box-message textarea::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .send-button {
     width: 89%;
@@ -263,10 +324,12 @@ h1.about__presentation__content__title {
     color: #fff;
 }
 
-.presentation .presentation__content .presentation__content__title i {
-color: white;
-margin: 10px 7px 0 0;
-font-size: 40px;
+.send-button button{
+    width: 500px;
+    background: none;
+    color: #FFF;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
 }
-
-.image_home

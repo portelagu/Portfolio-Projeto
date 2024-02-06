@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5% 1%;
+    }
+
+    .about__presentation {
+        flex-direction: column;
+        padding: 5% 1%;
+    }
+
+    .presentation__content {
+        width: auto;
+        padding: 0 2%;
+    }
+
+    .about__presentation__content {
+        width: auto;
+        padding: 0 2%;
+    }
+
+    .contact__presentation {
+    flex-direction: column;
+    padding: 5% 1%;
+    }
+}
+
+@media (max-width: 1614px) {
+    .form {
+    width: 100%;
+    }
+}

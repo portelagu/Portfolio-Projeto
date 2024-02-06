@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/vars.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
 </head>
 <body>
     <header class="header"> 
@@ -17,13 +18,20 @@
         <a class="header__menu__link" href="contact.html">Contato</a>
     </nav>
     </header>
-    <main class="presentation">
+    <main class="contact__presentation">
         <section class="presentation__content">
-        <h1 class="presentation__content__title">Contate-me!
-            <p class="presentation__content__text"> Caso queira entrar em contato comigo, preencha as informações ao lado e clique em enviar ou me mande uma dm em algumas das redes linkadas. :)</p>
-            <a href="https://www.instagram.com/portelagu/"> <i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/portelagu/"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://github.com/portelagu"><i class="fa-brands fa-github"></i></a>
+        <span class="presentation__content__title">
+            <div>
+                <p class="gradient_title">Contate-me!</p>
+            <p class="presentation__content__text"> Caso queira entrar em contato comigo, preencha as informações ao lado e clique em enviar ou me mande uma dm em algumas das redes linkadas.</p>
+        </div>
+        <div class="medias">
+            <h3 class="medias_title">Redes Sociais</h3>
+            <a class="social__animations" href="https://www.instagram.com/portelagu/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          <a class="social__animations" href="https://www.linkedin.com/in/portelagu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+           <a class="social__animations" href="https://github.com/portelagu" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+           </span>
         </section>
         <div class="form">
             <form action="#">
@@ -33,34 +41,39 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" autocomplete="off" required>
+                        
                     </div>
                 
                     <div class="input-box">
                         <label for="number">Telefone</label>
-                        <input type="tel" id="number" name="number" placeholder="(XX) XXXX-XXXX" required>
+                        <input type="text" id="number" name="number" placeholder="(XX) XXXXX-XXXX" autocomplete="off" required>
+                        
                     </div>
                 </div>
                 
                 <div class="input-group">
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu email" autocomplete="off" required>
+                        
                     </div>
                 
                     <div class="input-box">
                         <label for="subject">Assunto</label>
-                        <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
+                        <input type="text" id="subject" name="subject" placeholder="Digite o assunto" autocomplete="off" required>
+                        
                     </div>
                 </div>
                 
                 <div class="input-box-message">
                     <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" placeholder="Digite a sua mensagem aqui..." required></textarea>
+                    <textarea id="message" name="message" placeholder="Digite a sua mensagem aqui..." autocomplete="off" required></textarea>
+                    
                 </div>
                 
                 <div class="send-button">
-                    <a href="#">Enviar</a>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
@@ -69,5 +82,9 @@
     <footer> 
         <p class="footer_about">Desenvolvido por Gustavo Portela.</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"> </script>
+    <script src="mask.js"> </script>
 </body>
 </html>
